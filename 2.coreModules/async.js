@@ -1,7 +1,7 @@
 //asynchronous file writing
 const fs = require("fs");
 
-//write file asynchronous
+//write file asynchronous, Non-blocking
 //WrittenFile("filePath", "string/data", callBack())
 fs.writeFile("ayncTest.txt", "hello node aynchronous", (err) => {
     if (err) throw err;
