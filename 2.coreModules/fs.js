@@ -7,4 +7,4 @@ console.log("File written success");
 
 //Read file
 const data = fs.readFileSync("test.txt", { encoding: "utf-8"});
-console.log("Read Synchronously", data); //acrually here it gives binary format
+console.log("Read Synchronously", data); //actually here it gives binary format
