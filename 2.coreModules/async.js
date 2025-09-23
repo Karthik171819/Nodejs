@@ -3,7 +3,7 @@ const fs = require("fs");
 
 //write file asynchronous, Non-blocking
 //WrittenFile("filePath", "string/data", callBack())
-fs.writeFile("asyncTest.txt", "hello node aynchronous", (err) => {
+fs.writeFile("asyncTest.txt", "hello node asynchronous", (err) => {
     if (err) throw err;
     console.log("File Written Completed");//2nd execute
 
