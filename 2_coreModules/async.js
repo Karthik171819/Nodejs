@@ -1,3 +1,4 @@
+//async function
 //asynchronous file writing
 const fs = require("fs");
 
