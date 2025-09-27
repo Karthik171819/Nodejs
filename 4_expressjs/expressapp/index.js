@@ -9,6 +9,10 @@ app.get('/about', (req, res) => {
     res.status(200).send("This is a Expressjs about page");
 })
 
+app.post('/', (req, res) => {
+    res.status(200).send("This is a POST Request from expressjs");
+})
+
 app.listen(5000, () => {
     console.log("Server running successful 5000");
 });
