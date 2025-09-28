@@ -5,13 +5,15 @@ const User = require("./models/User");
 
 app.use(express.json())
 //User Routes
-//Create User
-app.post("/api/users", (req, res) => {
-    const data = req.body;
-    console.log(data);
+//Create User routes
+app.post("/api/users", async (req, res) => {
+    const user = new User(req.body);
+    const saved = await user.save();
+    res.status(201).json(saved)
+    
 })
 
-app.listen(5000, () => {
+app.listen(3000, () => {
     console.log("server listenting to http://localhost:3000");
 })
 
